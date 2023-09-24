@@ -1,0 +1,150 @@
+.heading-slider {
+	font-size: 5.0rem;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-family: 'Playfair Display', serif;
+
+	@include respond(tab-land) {
+		font-size: 3.0rem;
+	}	
+}
+
+
+
+.above-title-right-line {
+	color: $red;
+	font-size: 2.0rem;
+	text-transform: capitalize;
+	font-family: 'Source Sans Pro', serif;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom:0;
+		margin-left: 1.0rem;
+		width: 62px;
+		height: 0.5em;
+		border-top: 0.1rem solid $red;
+		
+	}
+}
+
+.above-title-left-right-line {
+	color: $red;
+	font-size: 2.0rem;
+	text-transform: capitalize;
+	font-family: 'Source Sans Pro', serif;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		bottom:0;
+		margin-left: -7.5rem;
+		width: 62px;
+		height: 0.5em;
+		border-top: 0.1rem solid $red;
+		
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		bottom:0;
+		margin-left: 1.0rem;
+		width: 62px;
+		height: 0.5em;
+		border-top: 0.1rem solid $red;
+		
+	}
+}
+
+.title-left-line {
+	color: $textblue;
+	font-size: 2.2rem;
+	text-transform: capitalize;
+	font-family: 'Playfair Display', serif;
+	position: relative;
+	margin-left: 6.5rem;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0.2rem;
+		margin-left: -6.5rem;
+		width: 45px;
+		height: 0.5em;
+		border-top: 0.2rem solid $textblue;
+		transition: ease all 0.3s;
+		
+	}
+}
+
+.heading-above-title {
+	font-size: 2.0rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	color: $red;
+}
+
+.heading-title {
+	font-family: 'Playfair Display', serif;
+	font-size: 3.5rem;
+	text-transform: capitalize;	
+	color: $textblue; 
+	margin: 1.3rem 0;
+}
+
+.paragraph-primary {
+	font-size: 1.7rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: $textblue;
+}
+
+.latest-news-category-text {
+	color: $red;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', serif;
+	position: relative;
+	margin-left: 6.5rem;
+	&:before {
+		content: "";
+		position: absolute;
+		bottom:0.3rem;
+		margin-left: -6.5rem;
+		width: 45px;
+
+		@include respond(tab-land) {
+			display: none;
+		}
+
+		height: 0.5em;
+		border-top: 0.1rem solid $red;
+		
+	}
+
+	@include respond(tab-land) {
+		font-size: 1.3rem;
+		margin-left: 0;
+	}
+}
+
+.latest-news-title a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2.0rem;
+	color: $textblue;
+	text-decoration: none;
+
+	&:hover {
+		color: $red;
+	}
+
+	@include respond(tab-port) {
+		font-size: 2.0rem!important;
+	}
+
+	@include respond(tab-land) {
+		font-size: 1.5rem;
+	}
+}
+

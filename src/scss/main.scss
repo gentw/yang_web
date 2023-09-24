@@ -1,0 +1,48 @@
+@import "../../../../../../node_modules/normalize.css/normalize";
+@import "~bootstrap/scss/bootstrap"; 
+
+$owl-image-path: "../../../../../../node_modules/owl.carousel/src/img/";
+@import '../../../../../../node_modules/owl.carousel/src/scss/owl.carousel';
+@import '../../../../../../node_modules/owl.carousel/src/scss/owl.theme.default';
+@import '../../../../../../node_modules/animate.css/animate.css';
+
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/font';
+@import 'base/base';
+@import 'base/typography';
+
+
+@import 'layout/navbar';
+@import 'layout/footer';
+
+@import 'components/btn'; 
+@import 'components/slider';
+@import 'components/aboutus';
+@import 'components/ourcompanies';
+@import 'components/team';
+@import 'components/news';
+
+@import 'pages/about';
+@import 'pages/our-companies';
+@import 'pages/our-investments';
+@import 'pages/press';
+@import 'pages/contact';
+@import 'pages/careers';
+@import 'pages/inner-news';
+
+.cover__text {
+	
+	font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+
+
+
